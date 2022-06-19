@@ -19,7 +19,7 @@ const Meme = (props) => {
         <button className="form--button" onClick={getMemeImage}>
           Get a new meme image 🖼
         </button>
-        <img src={imageUrl} alt="no image" />
+        <img src={imageUrl} alt="not found" />
       </div>
     </main>
   );
