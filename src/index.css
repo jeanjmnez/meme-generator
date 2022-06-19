@@ -11,6 +11,7 @@ main {
   padding: 36px;
 }
 
+
 .header {
   display: flex;
   align-items: center;
@@ -39,12 +40,14 @@ main {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
+  margin-bottom: 17px;
 }
 
 .form--input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  border: 1px solid 
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
 }
 
 .form--button {
@@ -55,4 +58,17 @@ main {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
 }

@@ -1,12 +1,15 @@
 import "./App.css";
+import AddItem from "./Components/AddItem";
+import Box from "./Components/Box";
 import Header from "./Components/Header";
 import Meme from "./Components/Meme";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Meme />
+      <Box />
     </div>
   );
 }
