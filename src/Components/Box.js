@@ -1,13 +1,19 @@
 import { useState } from "react";
-import boxes from "../boxes.js";
 
-const Box = () => {
-  const [squares, setSquareElements] = useState(boxes);
-  const squareElements = squares.map((square) => (
-    <div className="box" key={square.id}></div>
-  ));
+const Box = (props) => {
+  const [on, setOn] = useState(props.on);
+  console.log(props.on);
 
-  return <main>{squareElements}</main>;
+  const styles = {
+    backgroundColor: on === true ? "#222222" : "transparent",
+  };
+
+  function toggle() {
+    console.log("test toggle");
+    setOn((prevOn) => !prevOn);
+  }
+
+  return <div className="box" style={styles} onClick={toggle}></div>;
 };
 
 export default Box;

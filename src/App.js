@@ -1,6 +1,6 @@
 import "./App.css";
 import AddItem from "./Components/AddItem";
-import Box from "./Components/Box";
+import Boxlist from "./Components/Boxlist";
 import Header from "./Components/Header";
 import Meme from "./Components/Meme";
 
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <Meme />
-      <Box />
+      <Boxlist />
     </div>
   );
 }
